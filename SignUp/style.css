@@ -22,3 +22,15 @@ body{
   margin: 35px auto;
 
 }
+
+.personalInformation{
+
+  padding: 50px 10px;
+  border-radius: 2em;
+  margin: 100px 50px;
+  float: right;
+  position: relative;
+  box-shadow: #ccc 0px 0px 10px 0px;
+  background-color: #fbfbfb;
+  
+}
