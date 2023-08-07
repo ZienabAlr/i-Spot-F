@@ -21,11 +21,23 @@
         <input class="inpt" id="geboortedatum" type="date" placeholder="Geboortedatum">
 
         <label for="geslacht">Geslacht</label>
-        <input class="inpt" id="geslacht" type="text" placeholder="Geslacht">
+        <!-- choice form -->
+        <select class="inpt" name="geslacht" id="geslacht">
+          <!-- add placeholder to select -->
+          <option value="" disabled selected hidden>Geslacht</option>
+          <option value="vrouw">Vrouw</option>
+          <option value="man">Man</option>
+        </select>
+        <!-- <input class="inpt" id="geslacht" type="text" placeholder="Geslacht"> -->
 
         <label for="studiejaar">Studiejaar</label>
-        <input class="inpt" id="studiejaar" type="text" placeholder="Studiejaar">
-
+        <select class="inpt" name="studiejaar" id="studiejaar">
+          <option value="" disabled selected hidden>Studiejaar</option>
+          <option value="5de">5de jaar</option>
+          <option value="6de">6de jaar</option>
+          <option value="7de">7de jaar BSO</option>
+          <option value="andere">Andere</option>
+        </select>
         <label for="email">Email</label>
         <input class="inpt" id="email" type="email" placeholder="Email">
         
