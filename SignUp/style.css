@@ -33,6 +33,11 @@ body{
   color: #5974ec;
 }
 
+.titleInpt{
+  font-size: 0.8em;
+  margin: 0 23%;
+}
+
 .personalInformation{
 
   padding: 50px 10px;
