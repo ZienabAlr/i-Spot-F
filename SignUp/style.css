@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700&display=swap');
 body{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;;
 }
@@ -23,6 +23,8 @@ body{
   width: 50%;
   float: left;
   height: 100vh;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
 .logo{
@@ -59,23 +61,38 @@ body{
   border: 1px solid #5974ec;
 }
 
-.inpt:focus::placeholder{
+/* .inpt:focus::placeholder{
   color: #5974ec;
-}
+} */
 
 .titleInpt{
   font-size: 0.8em;
   margin: 0 23%;
 }
 
-.backgroundInfo{
 
+.backgroundInfo{
   padding: 50px 10px;
   border-radius: 2em;
   margin: 100px 50px;
-  float: right;
+  /* float: right; */
   position: relative;
   box-shadow: #ccc 0px 0px 10px 0px;
   background-color: #fbfbfb;
   
+}
+
+.btn{
+  display: block;
+  margin: 50px auto;
+  padding: 1em 5em;
+  border: none;
+  border-radius: 0.5em;
+  background: rgb(54,40,110);
+  background: linear-gradient(61deg, rgba(54,40,110,1) 0%, rgba(50,144,202,1) 50%, rgba(95,193,153,1) 100%);
+  color: #fbfbfb;
+  font-size: 18px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 500;
+
 }
