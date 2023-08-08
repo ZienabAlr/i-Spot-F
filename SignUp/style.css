@@ -28,10 +28,16 @@ body{
 }
 
 .landingPage{
-
   width: 50%;
   float: left;
   height: 100vh;
+}
+
+.logo{
+  width: 40%;
+  /* width: 300px; */
+  margin: 0 auto;
+  display: block;
 }
 
 .txt{
