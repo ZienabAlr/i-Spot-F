@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
 body{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;;
 }
@@ -12,6 +12,18 @@ body{
   /* width: 100%; */
   /* position: fixed; */
   /* z-index: -1; */
+}
+
+.background h1{
+  color: #fbfbfb;
+  text-align: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
 }
 
 .txt{
