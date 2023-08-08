@@ -61,10 +61,6 @@ body{
   border: 1px solid #5974ec;
 }
 
-/* .inpt:focus::placeholder{
-  color: #5974ec;
-} */
-
 .titleInpt{
   font-size: 0.8em;
   margin: 0 23%;
