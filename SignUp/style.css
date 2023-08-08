@@ -14,6 +14,16 @@ body{
   width: 700px;
 }
 
+.backgroundInfo{
+  padding: 50px 10px;
+  border-radius: 2em;
+  /* margin: 100px 50px; */
+  /* position: relative; */
+  box-shadow: #ccc 0px 0px 10px 0px;
+  background-color: #fbfbfb;
+  
+}
+
 .background{
   background-image: url("images/bckground.svg");
   background-size: cover;
@@ -78,16 +88,7 @@ body{
 }
 
 
-.backgroundInfo{
-  padding: 50px 10px;
-  border-radius: 2em;
-  margin: 100px 50px;
-  /* float: right; */
-  position: relative;
-  box-shadow: #ccc 0px 0px 10px 0px;
-  background-color: #fbfbfb;
-  
-}
+
 
 .btn{
   display: block;
