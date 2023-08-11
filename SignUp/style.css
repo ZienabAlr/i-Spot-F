@@ -114,4 +114,7 @@ body{
   .background{
     width: 100%;
   }
+  .personalInformation{
+    width: 80%;
+  }
 }
