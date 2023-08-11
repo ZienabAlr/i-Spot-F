@@ -107,3 +107,9 @@ body{
   font-weight: 500;
 
 }
+@media (max-width: 1100px){
+  .welcomingPage{
+    flex-direction: column;
+  }
+ 
+}
