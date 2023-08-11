@@ -111,5 +111,7 @@ body{
   .welcomingPage{
     flex-direction: column;
   }
- 
+  .background{
+    width: 100%;
+  }
 }
