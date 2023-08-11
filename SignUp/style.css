@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   min-height: 100vh;
   display: flex;
@@ -8,10 +14,8 @@ body{
   /* padding: 30px; */
 }
 .welcomingPage{
-
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .landingPage{
@@ -20,7 +24,6 @@ body{
 
 .personalInformation{
   margin: 0 auto;
-  width: 45%;
 }
 
 .backgroundInfo{
@@ -37,7 +40,6 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 50%;
 }
 
 .background h1{
