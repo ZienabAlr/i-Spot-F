@@ -70,6 +70,10 @@ body{
   padding: 0 20px;
 }
 
+.inputs{
+  margin: 35px 0;
+}
+
 .inpt{
   display: block;
   padding: 1.3em 1.5em;
