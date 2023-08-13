@@ -32,7 +32,7 @@ body{
 .backgroundInfo{
   padding: 50px 10px;
   border-radius: 2em;
-  margin: 90px 0;
+  margin: 30px 0;
   box-shadow: #ccc 0px 0px 10px 0px;
   background-color: #fbfbfb;
   
@@ -82,8 +82,6 @@ body{
   display: block;
   padding: 1.3em 1.5em;
   border: 1px solid #e3e3e3;
-  /* inner shadow */
-  /* box-shadow: inset 0px 0px 5px 0px #bdbdbd; */
   border-radius: 0.5em;
   width: 50%; 
   margin: 3px auto;
@@ -97,7 +95,9 @@ body{
 
 .titleInpt{
   font-size: 0.85em;
-  margin:0 26%;
+  font-weight: 550;
+  color: #191a1d;
+  margin:0 24.5%;
 }
 
 .content{
