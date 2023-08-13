@@ -100,6 +100,10 @@ body{
   margin:0 26%;
 }
 
+.content{
+  margin: 20px 0;
+}
+
 .btn{
   display: block;
   margin: 50px auto;
