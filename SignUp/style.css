@@ -92,7 +92,7 @@ body{
 
 .inpt:focus{
   outline: none;
-  border: 1px solid #5974ec;
+  border: 1.2px solid #5FC199;
 }
 
 .titleInpt{
