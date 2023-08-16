@@ -15,7 +15,7 @@
     margin: 0 auto;
 }
 
-.stapOne{
+.stepOne{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,4 +24,7 @@
     /* width: 100%; */
     /* max-width: 500px; */
     /* padding: 20px; */
+}
+.stepOne img{
+    width: 80%;
 }
