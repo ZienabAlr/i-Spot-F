@@ -11,4 +11,7 @@
     object-fit: cover;
     object-position: center;
 }
-  
+
+.backgroundCard{
+    margin: 0 auto;
+}
