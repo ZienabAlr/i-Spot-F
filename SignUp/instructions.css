@@ -15,7 +15,7 @@
     margin: 0 auto;
 }
 
-.stepOne{
+.stepOneImage{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@
     /* max-width: 500px; */
     /* padding: 20px; */
 }
-.stepOne img{
+.stepOneImage img{
     width: 80%;
 }
 .paragraph p{
