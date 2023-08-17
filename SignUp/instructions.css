@@ -11,21 +11,22 @@
     object-position: center;
 }
 
-.backgroundCard{
-    margin: 0 auto;
+.backgroundCard{ 
+    width: 500px;
 }
 
-.stepOneImage{
+.steps{
+    display: flex;
+    justify-content: center;
+}
+
+.stepImage{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 7% auto;
-    /* margin: 30px auto; */
-    /* width: 100%; */
-    /* max-width: 500px; */
-    /* padding: 20px; */
 }
-.stepOneImage img{
+.stepImage img{
     width: 80%;
 }
 .paragraph p{
