@@ -9,33 +9,38 @@
     <body>
         <div id="app"></div>
 
-        <div class="welcomingPage">
+        <div class="instructionsPage">
 
             <div class="background landingPage coverImg"></div>
-            <div class="backgroundCard landingPage backgroundInfo">
-                
-                <div class="instrCard">
-                    <div>
-                        <img class="logo" src="images/logo.svg" alt="">
-                    </div>
-                    <div class="stepOne">
-                        <div class="stepOneImage">
-                            <img src="images/allow_instructions.png" alt="">
+            <!-- <div class="backgroundCard backgroundInfo"> -->
+            <div class="personalInformation landingPage">
+                <div class="backgroundInfo">
+                    <div class="instrCard">
+                        <div>
+                            <img class="logo" src="images/logo.svg" alt="">
                         </div>
-                        <div class="paragraph">
-                            <p>Geef toestemming voor de camera</p>
+
+                        <div class="steps">
+                            <div class="stepOne">
+                                <div class="stepImage">
+                                    <img src="images/allow_instructions.png" alt="">
+                                </div>
+                                <div class="paragraph">
+                                    <p>Geef toestemming voor de camera</p>
+                                </div>
+                            </div>
+                        
+                        <div class="buttons">
+                            <button class="button">Vorige</button>
+                            <button class="button active">Volgende</button>
                         </div>
+                        
                     </div>
-                    
-                    <div class="buttons">
-                        <button>Vorige</button>
-                        <button>Volgende</button>
-                    </div>
-                    
+    
                 </div>
-
+    
             </div>
-
+                
         </div>
         
         <script type="module" src="/main.js"></script>
