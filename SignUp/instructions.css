@@ -38,6 +38,15 @@
 
 }
 
+.stepCircle{
+    margin: 10px 25px;; 
+    padding: 8px;
+    border: solid 1px #3290ca ;
+    border-radius: 50%;
+    background-color: #3290ca00; ;
+
+}
+
 .buttons{
     display: flex;
     justify-content: center;
