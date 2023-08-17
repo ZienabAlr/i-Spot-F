@@ -54,3 +54,9 @@
     border: solid 1px #3290ca ;
     background-color: #3290ca00; ;
 }
+.active{
+    background: rgb(54,40,110);
+    background: linear-gradient(61deg, rgba(54,40,110,1) 0%, rgba(50,144,202,1) 50%, rgba(95,193,153,1) 100%);
+    color: #fff;
+    border: none;
+}
