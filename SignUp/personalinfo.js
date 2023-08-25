@@ -15,7 +15,19 @@ export default class Info{
         study: study.value,
         email: email.value
     };
+    fetch('http://localhost:3000/ap/v2/userinfo', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(info)
+        })
+        .then(res => res.json())
+        .then(data =>{
+            console.log(data);
 
-    
-}
+
+        })
+
+    }
 }
