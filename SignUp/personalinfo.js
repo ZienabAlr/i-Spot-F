@@ -30,4 +30,21 @@ export default class Info{
         })
 
     }
+
+
+    sendInfo(){
+        const btn = document.querySelector(".btn");
+        btn.addEventListener("click", function(e){
+            e.preventDefault();
+            this.postInfo();
+            // go to instructions page
+            window.location.href = "instructions.html";
+            console.log("clicked");
+
+        }.bind(this));
+    
+
+
+    
+    }
 }
