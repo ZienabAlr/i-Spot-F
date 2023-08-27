@@ -1,0 +1,21 @@
+/* align images side by side  */
+
+.images {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* images img should be the same size*/
+.images img {
+    width: 600px;
+    height: 400px;
+    margin: 0 10px;
+ 
+} 
+

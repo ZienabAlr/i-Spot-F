@@ -15,10 +15,10 @@
     width: 500px;
 }
 
-.steps{
+/* .steps{
     display: flex;
     justify-content: center;
-}
+} */
 
 .stepImage{
     display: flex;
@@ -72,7 +72,9 @@
 .button{
 
     margin: 0 20px;
-    padding: 15px 35px;
+    /* padding: 18px 65px; */
+    padding: 2.5% 10%;
+    /* font-size: 30%; */
     border-radius: 5px;
     font-family: 'Syne', sans-serif; 
     border: solid 1px #3290ca ;
