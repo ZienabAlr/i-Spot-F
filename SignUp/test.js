@@ -69,28 +69,12 @@ function showImage(){
     }
 
     spliceImage();
-    // console.log(imagesData.length);
     compareResults();
-
-    if (imagesData.length == 0){
-        console.log("array is empty");
-        setTimeout(function(){
-            window.location.href = "http://127.0.0.1:5173/results.html";
-            postResults();
-        }
-        , 6000);
-
-       
-    }
-   
-    console.log(results);
-        count = results.reduce((a, b) => ({ ...a,
-        [b]: (a[b] || 0) + 10
-    }), {})
-    console.log(count);
-    
+    countResults();
+    endTest();
 }
 
+// function to remove shown images from array
 function spliceImage(){
     let index1 = imagesData.findIndex(image => image._id === randomImage2._id);
     imagesData.splice(index1, 1);
@@ -99,6 +83,7 @@ function spliceImage(){
     imagesData.splice(index2, 1);
 }
 
+// function to compare results
 function compareResults(){
     if (left > right){
         results.push(randomImage2.meaning);
@@ -111,12 +96,34 @@ function compareResults(){
         
         results.push(randomImage2.meaning, randomImage3.meaning);
         console.log("both");
+    }; 
+}; 
+
+// function to count results of each category
+function countResults(){
+    console.log(results);
+    count = results.reduce((a, b) => ({ ...a,
+    [b]: (a[b] || 0) + 10
+}), {})
+console.log(count);
+}; 
+
+// function to end test
+function endTest(){
+    console.log("end");
+    if (imagesData.length == 0){
+        console.log("array is empty");
+        setTimeout(function(){
+            window.location.href = "http://127.0.0.1:5173/results.html";
+            postResults();
+        }
+        , 6000);
+
+       
     }
 }
-
-
-
-
+    
+// function to post results to database
 function postResults(){
 
     const Talen = count["Talen"];
