@@ -69,8 +69,8 @@ function showImage(){
     }
 
     spliceImage();
-    console.log(imagesData.length);
-
+    // console.log(imagesData.length);
+    compareResults();
 
     if (imagesData.length == 0){
         console.log("array is empty");
@@ -82,16 +82,7 @@ function showImage(){
 
        
     }
-
-    if (left > right){
-        results.push(randomImage2.meaning);
-        
-    } else if (right > left){
-        results.push(randomImage3.meaning);
-    } else if (left == right){
-        
-        results.push(randomImage2.meaning, randomImage3.meaning);
-    }
+   
     console.log(results);
         count = results.reduce((a, b) => ({ ...a,
         [b]: (a[b] || 0) + 10
@@ -107,6 +98,23 @@ function spliceImage(){
     let index2 = imagesData.findIndex(image => image._id === randomImage3._id);
     imagesData.splice(index2, 1);
 }
+
+function compareResults(){
+    if (left > right){
+        results.push(randomImage2.meaning);
+        console.log("left");
+        
+    } else if (right > left){
+        results.push(randomImage3.meaning);
+        console.log("right");
+    } else if (left == right){
+        
+        results.push(randomImage2.meaning, randomImage3.meaning);
+        console.log("both");
+    }
+}
+
+
 
 
 function postResults(){
