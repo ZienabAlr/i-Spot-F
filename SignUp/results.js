@@ -27,15 +27,36 @@ function getResults(){
             data.data.results[data.data.results.length - 1].techniek / data.data.results.length - 1,
             data.data.results[data.data.results.length - 1].socialeWetenschappen / data.data.results.length - 1, 
 
-            console.log (data.data.results[data.data.results.length - 1].talen / data.data.results.length - 1)
-            // give the average of talen of the last element in the array
-
             ],
             backgroundColor: [
-        
+                '#67B1D2', 
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2'
 
             ],
             borderColor: [
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2',
+                '#67B1D2'
+
          
             ],
             borderWidth: 1
@@ -45,6 +66,7 @@ function getResults(){
         scales: {
             y: {
                 beginAtZero: true
+
             }
         }
     }
