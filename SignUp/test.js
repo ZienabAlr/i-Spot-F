@@ -67,12 +67,10 @@ function showImage(){
         randomImage3 = imagesData[Math.floor(Math.random() * imagesData.length)];
         document.querySelector('.image2').src = randomImage3.url;
     }
-   
-    let index1 = imagesData.findIndex(image => image._id === randomImage2._id);
-    imagesData.splice(index1, 1);
 
-    let index2 = imagesData.findIndex(image => image._id === randomImage3._id);
-    imagesData.splice(index2, 1); 
+    spliceImage();
+    console.log(imagesData.length);
+
 
     if (imagesData.length == 0){
         console.log("array is empty");
@@ -96,11 +94,20 @@ function showImage(){
     }
     console.log(results);
         count = results.reduce((a, b) => ({ ...a,
-        [b]: (a[b] || 0) + 1
+        [b]: (a[b] || 0) + 10
     }), {})
     console.log(count);
     
 }
+
+function spliceImage(){
+    let index1 = imagesData.findIndex(image => image._id === randomImage2._id);
+    imagesData.splice(index1, 1);
+
+    let index2 = imagesData.findIndex(image => image._id === randomImage3._id);
+    imagesData.splice(index2, 1);
+}
+
 
 function postResults(){
 
