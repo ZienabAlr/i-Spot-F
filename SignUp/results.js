@@ -14,18 +14,18 @@ function getResults(){
         datasets: [{
             label: '# Results',
             data: //give the data of the last element in the array
-            [data.data.results[data.data.results.length - 1].talen / data.data.results.length - 1,
-            data.data.results[data.data.results.length - 1].exacteWetenschappen / data.data.results.length - 1,
-            data.data.results[data.data.results.length - 1].wiskunde / data.data.results.length - 1,
-            data.data.results[data.data.results.length - 1].literatuur / data.data.results.length - 1,
-            data.data.results[data.data.results.length - 1].medischeActiviteiten / data.data.results.length - 1,
-            data.data.results[data.data.results.length - 1].socialeDienstbetoon / data.data.results.length - 1,
-            data.data.results[data.data.results.length - 1].handelZaken / data.data.results.length - 1,
-            data.data.results[data.data.results.length - 1].muziek / data.data.results.length - 1,
-            data.data.results[data.data.results.length - 1].sport / data.data.results.length - 1,
-            data.data.results[data.data.results.length - 1].plastischOpvoeding / data.data.results.length - 1,
-            data.data.results[data.data.results.length - 1].techniek / data.data.results.length - 1,
-            data.data.results[data.data.results.length - 1].socialeWetenschappen / data.data.results.length - 1, 
+            [data.data.results[data.data.results.length - 1].talen,
+            data.data.results[data.data.results.length - 1].exacteWetenschappen,
+            data.data.results[data.data.results.length - 1].wiskunde,
+            data.data.results[data.data.results.length - 1].literatuur,
+            data.data.results[data.data.results.length - 1].medischeActiviteiten,
+            data.data.results[data.data.results.length - 1].socialeDienstbetoon,
+            data.data.results[data.data.results.length - 1].handelZaken,
+            data.data.results[data.data.results.length - 1].muziek,
+            data.data.results[data.data.results.length - 1].sport,
+            data.data.results[data.data.results.length - 1].plastischOpvoeding,
+            data.data.results[data.data.results.length - 1].techniek,
+            data.data.results[data.data.results.length - 1].socialeWetenschappen
 
             ],
             backgroundColor: [
