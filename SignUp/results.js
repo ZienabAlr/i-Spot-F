@@ -29,8 +29,7 @@ function getResults(){
                         (data.data.results[data.data.results.length - 1].techniek/9)*100,
                         (data.data.results[data.data.results.length - 1].socialeWetenschappen/11)*100, 
                         (data.data.results[data.data.results.length - 1].administratie/10)*100,
-                        (data.data.results[data.data.results.length - 1].overtuigenEnBesturen/9)*100,
-                        console.log((data.data.results[2].talen/10)*100 + "%"),
+                        (data.data.results[data.data.results.length - 1].overtuigenEnBesturen/9)*100
 
 
                     ],
@@ -87,10 +86,27 @@ function getResults(){
                     }]
                 }
             }
-            
+
         });
 
     });
 
 }
 getResults();
+
+function user(){
+
+    // get request to get the user data
+    fetch('http://localhost:3000/ap/v2/userinfo')
+    .then(res => res.json())
+    .then((data) =>{
+
+        const name = document.querySelector(".user");
+        name.innerHTML = data.data.userinfo[data.data.userinfo.length - 1].name;
+
+    });
+   
+
+
+}
+user();
