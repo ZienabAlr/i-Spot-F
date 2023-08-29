@@ -103,7 +103,7 @@ function compareResults(){
 function countResults(){
     console.log(results);
     count = results.reduce((a, b) => ({ ...a,
-    [b]: (a[b] || 0) + 10
+    [b]: (a[b] || 0) + 1
 }), {})
 console.log(count);
 }; 
