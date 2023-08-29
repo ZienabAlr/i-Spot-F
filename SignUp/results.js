@@ -10,7 +10,7 @@ function getResults(){
     var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Talen', 'Exacte Wetenschappen', 'Wiskunde', 'Literatuur', 'Medische Activiteiten', 'Sociale Wetenschappen', 'Handel-Zaken', 'Muziek', 'Sport', 'Plastisch Opvoeding', 'Techniek', 'Sociale Wetenschappen'],
+        labels: ['Talen', 'Exacte Wetenschappen', 'Wiskunde', 'Literatuur', 'Medische Activiteiten', 'Sociale Wetenschappen', 'Handel-Zaken', 'Muziek', 'Sport', 'Plastisch Opvoeding', 'Techniek', 'Sociale Wetenschappen', 'Administratie', 'Overtuigen en Besturen'],
         datasets: [{
             label: '# Results',
             data: //give the data of the last element in the array
@@ -25,7 +25,11 @@ function getResults(){
             data.data.results[data.data.results.length - 1].sport,
             data.data.results[data.data.results.length - 1].plastischOpvoeding,
             data.data.results[data.data.results.length - 1].techniek,
-            data.data.results[data.data.results.length - 1].socialeWetenschappen
+            data.data.results[data.data.results.length - 1].socialeWetenschappen, 
+            data.data.results[data.data.results.length - 1].administratie,
+            data.data.results[data.data.results.length - 1].overtuigenEnBesturen,
+            console.log(data.data.results[data.data.results.length - 1].overtuigenEnBesturen),
+
 
             ],
             backgroundColor: [
@@ -40,7 +44,9 @@ function getResults(){
                 '#67B1D2',
                 '#67B1D2',
                 '#67B1D2',
-                '#67B1D2'
+                '#67B1D2',
+                '#67B1D2',
+                '#67b1d2'
 
             ],
             borderColor: [
@@ -55,7 +61,9 @@ function getResults(){
                 '#67B1D2',
                 '#67B1D2',
                 '#67B1D2',
-                '#67B1D2'
+                '#67B1D2',
+                '#67b1d2',
+                '#67b1d2'
 
          
             ],
