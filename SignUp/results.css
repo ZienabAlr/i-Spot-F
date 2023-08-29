@@ -1,13 +1,23 @@
+
 .container {
     /* center */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border: 1px solid red; */
 }
 
 /* put the divs of the container above each other */
 .container div {
     margin: 10px 0;
+}
+
+.left {
+
+    /* align left */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
 }
