@@ -1,21 +1,18 @@
-/* import syne and Avenir fonts */
 @import url('https://fonts.googleapis.com/css?family=Avenir|Syne');
 .container {
-    /* center */
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-/* put the divs of the container above each other */
 .container div {
     margin: 10px 0;
 }
 
 .left {
 
-    /* align left */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -31,7 +28,6 @@
     font-family: 'Syne', sans-serif;
 }
 .user {
-    /* font-family: 'Syne', sans-serif; */
     font-family: 'Avenir', sans-serif;
     font-weight: 400;
 }
