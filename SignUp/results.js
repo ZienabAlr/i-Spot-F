@@ -6,82 +6,91 @@ function getResults(){
     .then(res => res.json())
     .then((data) =>{
     
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Talen', 'Exacte Wetenschappen', 'Wiskunde', 'Literatuur', 'Medische Activiteiten', 'Sociale Wetenschappen', 'Handel-Zaken', 'Muziek', 'Sport', 'Plastisch Opvoeding', 'Techniek', 'Sociale Wetenschappen', 'Administratie', 'Overtuigen en Besturen'],
-        datasets: [{
-            label: '# Results',
-            data: //give the data of the last element in the array
-            [data.data.results[data.data.results.length - 1].talen,
-            data.data.results[data.data.results.length - 1].exacteWetenschappen,
-            data.data.results[data.data.results.length - 1].wiskunde,
-            data.data.results[data.data.results.length - 1].literatuur,
-            data.data.results[data.data.results.length - 1].medischeActiviteiten,
-            data.data.results[data.data.results.length - 1].socialeDienstbetoon,
-            data.data.results[data.data.results.length - 1].handelZaken,
-            data.data.results[data.data.results.length - 1].muziek,
-            data.data.results[data.data.results.length - 1].sport,
-            data.data.results[data.data.results.length - 1].plastischOpvoeding,
-            data.data.results[data.data.results.length - 1].techniek,
-            data.data.results[data.data.results.length - 1].socialeWetenschappen, 
-            data.data.results[data.data.results.length - 1].administratie,
-            data.data.results[data.data.results.length - 1].overtuigenEnBesturen,
-            console.log(data.data.results[data.data.results.length - 1].overtuigenEnBesturen),
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            // make a percatage bar 
+            type: 'bar',
+            data: {
+                labels: ['Talen', 'Exacte Wetenschappen', 'Wiskunde', 'Literatuur', 'Medische Activiteiten', 'Sociale Wetenschappen', 'Handel-Zaken', 'Muziek', 'Sport', 'Plastisch Opvoeding', 'Techniek', 'Sociale Wetenschappen', 'Administratie', 'Overtuigen en Besturen'],
+                datasets: [{
+                    label: '# Results in %',
+                    data: 
+                    [
+                        (data.data.results[data.data.results.length - 1].talen/11)*100,
+                        (data.data.results[data.data.results.length - 1].exacteWetenschappen/10)*100,
+                        (data.data.results[data.data.results.length - 1].wiskunde/10)*100,
+                        (data.data.results[data.data.results.length - 1].literatuur/7)*100,
+                        (data.data.results[data.data.results.length - 1].medischeActiviteiten/10)*100,
+                        (data.data.results[data.data.results.length - 1].socialeDienstbetoon/8)*100,
+                        (data.data.results[data.data.results.length - 1].handelZaken/10)*100,
+                        (data.data.results[data.data.results.length - 1].muziek/9)*100,
+                        (data.data.results[data.data.results.length - 1].sport/9)*100,
+                        (data.data.results[data.data.results.length - 1].plastischOpvoeding/11)*100,
+                        (data.data.results[data.data.results.length - 1].techniek/9)*100,
+                        (data.data.results[data.data.results.length - 1].socialeWetenschappen/11)*100, 
+                        (data.data.results[data.data.results.length - 1].administratie/10)*100,
+                        (data.data.results[data.data.results.length - 1].overtuigenEnBesturen/9)*100,
+                        console.log((data.data.results[2].talen/10)*100 + "%"),
 
 
-            ],
-            backgroundColor: [
-                '#67B1D2', 
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67b1d2'
+                    ],
+                    backgroundColor: [
+                        '#67B1D2', 
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67b1d2'
 
-            ],
-            borderColor: [
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67B1D2',
-                '#67b1d2',
-                '#67b1d2'
+                    ],
+                    borderColor: [
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67B1D2',
+                        '#67b1d2',
+                        '#67b1d2'
 
-         
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-
+                
+                    ],
+                    borderWidth: 1
+                }]
+            } 
+            // show a perecentage mark on the y-axis
+            ,
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            max: 100,
+                            callback: function(value) {
+                                return value + "%"
+                            }
+                        }
+                    }]
+                }
             }
-        }
-    }
-});
+            
+        });
 
-    }
-    );
+    });
 
 }
 getResults();
