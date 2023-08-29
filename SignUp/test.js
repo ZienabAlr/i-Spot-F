@@ -138,6 +138,9 @@ function postResults(){
     const Plastisch_opvoeding = count["Plastisch opvoeding"];
     const Techniek = count["Techniek"];
     const Sociale_wetenschappen = count["Sociale wetenschappen"];
+    const Administratie = count["Administratie"];
+    const OvertuigenEnBesturen = count["Overtuigen en besturen"];
+
 
 
     const results = {
@@ -152,7 +155,9 @@ function postResults(){
         sport: Sport,
         plastischOpvoeding: Plastisch_opvoeding,
         techniek: Techniek,
-        socialeWetenschappen: Sociale_wetenschappen
+        socialeWetenschappen: Sociale_wetenschappen, 
+        administratie: Administratie,
+        overtuigenEnBesturen: OvertuigenEnBesturen
 
 
     };
@@ -165,7 +170,7 @@ function postResults(){
         })
         .then(res => res.json())
         .then(data =>{
-            console.log(data);
+            console.log("this is results",data);
         }
         )
 
