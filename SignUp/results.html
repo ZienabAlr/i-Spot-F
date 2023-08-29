@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="results.css">
     <title>I-Spot Results</title>
     <!-- include library of chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 </head>
 <body>
-    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
-        <canvas id="myChart"></canvas>
+    <div class="container">
+        <div>
+           <div class="left">
+                <h2 class="gebruiker">Gebruiker:</h2>
+                <h2 class="user"></h2>
+            </div> 
+           <!-- <a href="" class="download">Download Results</a> -->
+            <!-- <div> <button class="download">d</button></div>  -->
+        </div>
+        <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+            <canvas id="myChart"></canvas>
+        </div>
+       
+        <script src="results.js" ></script>
+    
     </div>
-    <script src="results.js"></script>
-
     
 </body>
 </html>
