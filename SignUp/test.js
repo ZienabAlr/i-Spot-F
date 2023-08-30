@@ -113,9 +113,9 @@ function endTest(){
     console.log("end");
     if (imagesData.length == 0){
         console.log("array is empty");
+        postResults();
         setTimeout(function(){
-            window.location.href = "results.html";
-            postResults();
+            window.location.href = "results.html";    
         }
         , 6000);
 
