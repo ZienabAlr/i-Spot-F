@@ -15,7 +15,7 @@ export default class Info{
         study: study.value,
         email: email.value
     };
-    fetch('http://localhost:3000/ap/v2/userinfo', {
+    fetch('https://i-spot-api.onrender.com/ap/v2/userinfo', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
