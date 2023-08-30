@@ -38,7 +38,7 @@ webgazer.setRegression('ridge') /* currently must set regression and tracker */
 }).begin()
 
 function getImages(){
-    fetch('http://localhost:3000/api/v1/test')
+    fetch('https://i-spot-api.onrender.com/api/v1/test')
     .then(res => res.json())
     .then((data) =>{
         
@@ -161,7 +161,7 @@ function postResults(){
 
 
     };
-    fetch('http://localhost:3000/api/v2/results', {
+    fetch('https://i-spot-api.onrender.com/api/v2/results', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
