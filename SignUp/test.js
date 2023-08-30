@@ -114,7 +114,7 @@ function endTest(){
     if (imagesData.length == 0){
         console.log("array is empty");
         setTimeout(function(){
-            window.location.href = "http://127.0.0.1:5173/results.html";
+            window.location.href = "results.html";
             postResults();
         }
         , 6000);
