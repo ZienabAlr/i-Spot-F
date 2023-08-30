@@ -24,7 +24,9 @@ export default class Info{
         })
         .then(res => res.json())
         .then(data =>{
-            console.log(data);
+            
+            console.log("this is info",data);
+
 
 
         })
@@ -37,14 +39,14 @@ export default class Info{
         btn.addEventListener("click", function(e){
             e.preventDefault();
             this.postInfo();
-            // go to instructions page
-            window.location.href = "instructions.html";
             console.log("clicked");
+            setTimeout(function(){
+                window.location.href = "instructions.html";
+            }, 2000);
 
         }.bind(this));
     
-
-
-    
     }
+
+
 }
