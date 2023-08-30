@@ -2,7 +2,7 @@
 
 function getResults(){
 
-    fetch('http://localhost:3000/api/v2/results')
+    fetch('https://i-spot-api.onrender.com/api/v2/results')
     .then(res => res.json())
     .then((data) =>{
     
@@ -97,7 +97,7 @@ getResults();
 function user(){
 
     // get request to get the user data
-    fetch('http://localhost:3000/ap/v2/userinfo')
+    fetch('https://i-spot-api.onrender.com/ap/v2/userinfo')
     .then(res => res.json())
     .then((data) =>{
 
